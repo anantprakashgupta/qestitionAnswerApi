@@ -1,0 +1,220 @@
+[
+  {
+    "question": "Local to server rsync using ip address",
+    "answer": "rsync -avz --progress PlantEntryExitSystem rajat@192.168.0.227:"
+  },
+  {
+    "question": "Local to server rsync using ssh",
+    "answer": "rsync -avz --progress -e \"ssh -p 23\" appServer.zip lfu@2.pathtoll.in:"
+  },
+  {
+    "question": "How to run rsync on SSH with a different port?",
+    "answer": "rsync -avz --progress -e \"ssh -p 6002\" hplip-3.23.12.run rajat@208.109.234.82:"
+  },
+  {
+    "question": "Access ip address using static port rajat",
+    "answer": "ssh -oPort=6002 rajat@208.109.234.82"
+  },
+  {
+    "question": "Download file from sever using ssh port ip rajat",
+    "answer": "rsync -avz --progress -e \"ssh -p 6001\" rajat@208.109.234.82:/home/rajat/TTTT_P.sql ./"
+  },
+  {
+    "question": "Give permissions for usb lp?",
+    "answer": "sudo chmod 777 /dev/usb/lp0"
+  },
+  {
+    "question": "Print manually using command to usb printer",
+    "answer": "echo 'hello' >> /dev/usb/lp0"
+  },
+  {
+    "question": "show log file in real-time",
+    "answer": "tail -f //tmp/Server.log"
+  },
+  {
+    "question": "Edit a log file using vi",
+    "answer": "vi //tmp/Server.log"
+  },
+  {
+    "question": "How to display a log file using cat?",
+    "answer": "cat //tmp/Server.log"
+  },
+
+  {
+    "question": "How to set the timezone in Ubuntu?",
+    "answer": "timedatectl set-timezone Asia/Kolkata"
+  },
+  {
+    "question": "How to list all available timezones?",
+    "answer": "timedatectl list-timezones"
+  },
+  {
+    "question": "Install a specific version of Node.js?",
+    "answer": "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && nvm install 20.10.0"
+  },
+  {
+    "question": "Run Manually Reader",
+    "answer": "Reader-idTech 192.168.49.28 6000"
+  },
+  {
+    "question": "Install a Debian package?",
+    "answer": "sudo dpkg -i Reader-idTech-v3.0.2.deb"
+  },
+  {
+    "question": "Install VLC using snap?",
+    "answer": "sudo snap install vlc"
+  },
+  {
+    "question": "How to install VLC using apt?",
+    "answer": "sudo apt install vlc"
+  },
+  {
+    "question": "How to install Apache2 server?",
+    "answer": "sudo apt install apache2"
+  },
+  {
+    "question": "How to restart Apache2 service?",
+    "answer": "sudo systemctl restart apache2"
+  },
+  {
+    "question": "How to check the status of Apache2 service?",
+    "answer": "sudo systemctl status apache2"
+  },
+  {
+    "question": "How to enable CGI module in Apache2?",
+    "answer": "sudo a2enmod cgi"
+  },
+  {
+    "question": "How to grant execute permissions to a script?",
+    "answer": "chmod +x scriptname.cgi"
+  },
+  {
+    "question": "How to install Node.js?",
+    "answer": "sudo cp -r node-v20.10.0-linux-x64/* /usr/local/ && sudo ln -s /usr/local/bin/node /usr/bin/node"
+  },
+  {
+    "question": "How to install a package globally using npm?",
+    "answer": "npm install --global eas-cli"
+  },
+  {
+    "question": "How to build an Expo project for Android?",
+    "answer": "eas build --platform android"
+  },
+  {
+    "question": "How to run a React Native project on an Android device?",
+    "answer": "npx react-native run-android"
+  },
+  {
+    "question": "How to clean Gradle cache in a React Native project?",
+    "answer": "cd android && ./gradlew clean"
+  },
+  {
+    "question": "How to assemble a debug APK manually?",
+    "answer": "cd android && ./gradlew assembleDebug"
+  },
+  {
+    "question": "How to install a debug APK on a connected device?",
+    "answer": "adb install -r app/build/outputs/apk/debug/app-debug.apk"
+  },
+  {
+    "question": "Open crontab file?",
+    "answer": "cat /etc/crontab"
+  },
+ 
+  {
+    "question": "install sshpass?",
+    "answer": "sudo apt install sshpass"
+  },
+  {
+    "question": "How to use ffmpeg to convert an RTSP stream?",
+    "answer": "ffmpeg -i rtsp://192.168.****/onvif2 -crf 30 -preset ultrafast -acodec aac -strict experimental -ar 44100 -ac 2 -b:a 96k -vcodec libx264 -r 25 -b:v 500k -f flv http://127.0.0.1:****/vid2.mp4"
+  },
+  {
+    "question": "How to install a package globally using npm?",
+    "answer": "npm install --global eas-cli"
+  },
+  {
+    "question": "How to update hardwareMaster table in MySQL?",
+    "answer": "UPDATE hardwareMaster SET ip = '127.0.0.1', password = '1234567!' WHERE deviceName = 'cam1';"
+  },
+  {
+    "question": "How to modify a column in MySQL?",
+    "answer": "ALTER TABLE trxnMaster MODIFY COLUMN trxnNo VARCHAR(200);"
+  },
+  {
+    "question": "How to install Node.js version 20.10.0?",
+    "answer": "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && nvm install 20.10.0"
+  },
+  {
+    "question": "Send Message on Ufd",
+    "answer": "echo 'AANANAT@PRAKASH' | netcat 192.168.1.11 20108"
+  },
+  {
+    "question": "Start Reader",
+    "answer": "nohup bash Reader.sh"
+  },
+  {
+    "question": "grep",
+    "answer": "nps -ef | grep Reader.sh "
+  },
+  {
+    "question": "Run manual qrReader",
+    "answer": "bash qrReader.sh 'admin' '1234567!' '192.168.250.45' 'vehicleNumber.txt'"
+  },
+  {
+    "question": "npm cache clean",
+    "answer": "npm cache clean --force'"
+  },
+  {
+    "question": "update mysql table rows",
+    "answer": "UPDATE hardwareMaster SET ip = '127.0.0.1', password = '1234567!' WHERE deviceName = 'cam1';"
+  },
+  {
+    "question": "Delate mysql table rows",
+    "answer": "DELETE FROM trxnMaster WHERE trxnNo = 123456;"
+  },
+  {
+    "question": "Alter mysql table rows",
+    "answer": "ALTER TABLE trxnMaster MODIFY COLUMN trxnNo VARCHAR(200);"
+  },
+  {
+    "question": "Alter Drop forgeinkey",
+    "answer": "ALTER TABLE vehicleMaster DROP CONSTRAINT fk_vehicleMaster_1 `TransportTrack`.`itemMaster`;"
+  },
+  {
+    "question": "export sql using command",
+    "answer": "mysqldump -u root -p --routines --triggers resume > /home/anant/Music/Lane_june29.sql"
+  },
+  {
+    "question": "Drop procedure uisng command",
+    "answer": "DROP PROCEDURE IF EXISTS insertTrxData;"
+  },
+  {
+    "question": "Show procedure using command",
+    "answer": "SHOW CREATE PROCEDURE insertTrxData;"
+  },
+  {
+    "question": "Show all procedure using command",
+    "answer": "SHOW PROCEDURE STATUS WHERE Db = 'App_CS';"
+  },
+  {
+    "question": "Set enable disable forgeunkey using command",
+    "answer": "set foreign_key_checks=1;"
+  },
+  {
+    "question": "Give permissioan usb",
+    "answer": "sudo chmod 777 /dev/ttyUSB*"
+  },
+  {
+    "question": "Show all system information",
+    "answer": "top"
+  },
+  {
+    "question": "unzip zip file",
+    "answer": "unzip filenema.tar"
+  },
+  {
+    "question": "show all file list",
+    "answer": "ls-l"
+  }
+]
