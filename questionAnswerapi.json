@@ -216,5 +216,13 @@
   {
     "question": "show all file list",
     "answer": "ls-l"
+  },
+  {
+    "question": "kiosk restart",
+    "answer": "sudo service kiosk restart"
+  },
+   {
+    "question": "Rename file and move file with same name",
+    "answer": "mv main.html main.html_OLD && mv ~/main.html ./"
   }
 ]
