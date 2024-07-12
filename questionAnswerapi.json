@@ -235,7 +235,7 @@
   },
     {
     "question": "ufd command for manual send message",
-    "answer": "python3 /usr/LaneApp/appServer/scripts/Ufd.py /dev/ttyS5 " 'arg1' 'arg2' "
+    "answer": "python3 /usr/LaneApp/appServer/scripts/Ufd.py /dev/ttyS5  'arg1' 'arg2' "
   },
    {
     "question": "kill running process",
