@@ -224,5 +224,33 @@
    {
     "question": "Rename file and move file with same name",
     "answer": "mv main.html main.html_OLD && mv ~/main.html ./"
+  },
+   {
+    "question": "kiosk path in linux",
+    "answer": "/opt/kiosk/"
+  },
+     {
+    "question": "grep command for chekc rinning script in crontab",
+    "answer": "ps -ef|grep filename"
+  },
+    {
+    "question": "ufd command for manual send message",
+    "answer": "python3 /usr/LaneApp/appServer/scripts/Ufd.py /dev/ttyS5 " 'arg1' 'arg2' "
+  },
+   {
+    "question": "kill running process",
+    "answer": "sudo killall -9 processName U "
+  },
+  {
+    "question": "udf message send manuall using network port",
+    "answer": " echo 'AANANAT@PRAKASH' | netcat 192.168.1.11 20108"
+  },
+   {
+    "question": "change hostname in ubuntu",
+    "answer": "sudo vi /etc/hostname"
+  },
+  {
+    "question": "change hosts in ubuntu",
+    "answer": "sudo vi /etc/hosts"
   }
 ]
