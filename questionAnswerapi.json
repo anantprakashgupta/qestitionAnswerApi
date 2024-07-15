@@ -252,5 +252,285 @@
   {
     "question": "change hosts in ubuntu",
     "answer": "sudo vi /etc/hosts"
+  },
+   {
+    "question": "Start MySQL service",
+    "answer": "sudo systemctl start mysql"
+  },
+  {
+    "question": "Stop MySQL service",
+    "answer": "sudo systemctl stop mysql"
+  },
+  {
+    "question": "Restart MySQL service",
+    "answer": "sudo systemctl restart mysql"
+  },
+  {
+    "question": "Check MySQL service status",
+    "answer": "sudo systemctl status mysql"
+  },
+  {
+    "question": "Log in to MySQL as root user",
+    "answer": "mysql -u root -p"
+  },
+  {
+    "question": "Create a new database",
+    "answer": "CREATE DATABASE database_name;"
+  },
+  {
+    "question": "Create a new user",
+    "answer": "CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';"
+  },
+  {
+    "question": "Grant all privileges to a user on a database",
+    "answer": "GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';"
+  },
+  {
+    "question": "Flush privileges",
+    "answer": "FLUSH PRIVILEGES;"
+  },
+  {
+    "question": "Show all databases",
+    "answer": "SHOW DATABASES;"
+  },
+  {
+    "question": "Use a database",
+    "answer": "USE database_name;"
+  },
+  {
+    "question": "Show all tables in a database",
+    "answer": "SHOW TABLES;"
+  },
+  {
+    "question": "Describe the structure of a table",
+    "answer": "DESCRIBE table_name;"
+  },
+  {
+    "question": "Select all data from a table",
+    "answer": "SELECT * FROM table_name;"
+  },
+  {
+    "question": "Insert data into a table",
+    "answer": "INSERT INTO table_name (column1, column2) VALUES ('value1', 'value2');"
+  },
+  {
+    "question": "Update data in a table",
+    "answer": "UPDATE table_name SET column1 = 'value1' WHERE condition;"
+  },
+  {
+    "question": "Delete data from a table",
+    "answer": "DELETE FROM table_name WHERE condition;"
+  },
+  {
+    "question": "Drop a table",
+    "answer": "DROP TABLE table_name;"
+  },
+  {
+    "question": "Drop a database",
+    "answer": "DROP DATABASE database_name;"
+  },
+  {
+    "question": "Backup a database to a file",
+    "answer": "mysqldump -u username -p database_name > backup_file.sql"
+  },
+  {
+    "question": "Restore a database from a backup file",
+    "answer": "mysql -u username -p database_name < backup_file.sql"
+  },
+  {
+    "question": "Check MySQL version",
+    "answer": "mysql --version"
+  },
+  {
+    "question": "Update package list",
+    "answer": "sudo apt update"
+  },
+  {
+    "question": "Upgrade all packages",
+    "answer": "sudo apt upgrade"
+  },
+  {
+    "question": "Install a package",
+    "answer": "sudo apt install package_name"
+  },
+  {
+    "question": "Remove a package",
+    "answer": "sudo apt remove package_name"
+  },
+  {
+    "question": "Search for a package",
+    "answer": "apt search package_name"
+  },
+  {
+    "question": "Show information about a package",
+    "answer": "apt show package_name"
+  },
+  {
+    "question": "List installed packages",
+    "answer": "dpkg --list"
+  },
+  {
+    "question": "Check disk usage",
+    "answer": "df -h"
+  },
+  {
+    "question": "Check directory size",
+    "answer": "du -sh directory_name"
+  },
+  {
+    "question": "Change directory",
+    "answer": "cd directory_name"
+  },
+  {
+    "question": "List files in a directory",
+    "answer": "ls -l"
+  },
+  {
+    "question": "Copy a file",
+    "answer": "cp source_file destination_file"
+  },
+  {
+    "question": "Move a file",
+    "answer": "mv source_file destination_file"
+  },
+  {
+    "question": "Delete a file",
+    "answer": "rm file_name"
+  },
+  {
+    "question": "Create a directory",
+    "answer": "mkdir directory_name"
+  },
+  {
+    "question": "Delete a directory",
+    "answer": "rmdir directory_name"
+  },
+  {
+    "question": "Display contents of a file",
+    "answer": "cat file_name"
+  },
+  {
+    "question": "Display contents of a file with pagination",
+    "answer": "less file_name"
+  },
+  {
+    "question": "Display first 10 lines of a file",
+    "answer": "head file_name"
+  },
+  {
+    "question": "Display last 10 lines of a file",
+    "answer": "tail file_name"
+  },
+  {
+    "question": "Find files or directories",
+    "answer": "find /path -name file_name"
+  },
+  {
+    "question": "Search for a string in files",
+    "answer": "grep 'string' file_name"
+  },
+  {
+    "question": "Change file permissions",
+    "answer": "chmod permissions file_name"
+  },
+  {
+    "question": "Change file owner",
+    "answer": "chown user:group file_name"
+  },
+  {
+    "question": "Show current directory",
+    "answer": "pwd"
+  },
+  {
+    "question": "Show system date and time",
+    "answer": "date"
+  },
+  {
+    "question": "Show currently logged in users",
+    "answer": "who"
+  },
+  {
+    "question": "Show system uptime",
+    "answer": "uptime"
+  },
+  {
+    "question": "Reboot the system",
+    "answer": "sudo reboot"
+  },
+  {
+    "question": "Shutdown the system",
+    "answer": "sudo shutdown now"
+  },
+  {
+    "question": "Show system information",
+    "answer": "uname -a"
+  },
+  {
+    "question": "Show memory usage",
+    "answer": "free -h"
+  },
+  {
+    "question": "Show CPU information",
+    "answer": "lscpu"
+  },
+  {
+    "question": "Show PCI devices",
+    "answer": "lspci"
+  },
+  {
+    "question": "Show USB devices",
+    "answer": "lsusb"
+  },
+  {
+    "question": "Show network interfaces",
+    "answer": "ifconfig"
+  },
+  {
+    "question": "Ping a host",
+    "answer": "ping host_name_or_ip"
+  },
+  {
+    "question": "Show open ports",
+    "answer": "sudo netstat -tuln"
+  },
+  {
+    "question": "Show running processes",
+    "answer": "ps aux"
+  },
+  {
+    "question": "Kill a process by PID",
+    "answer": "kill PID"
+  },
+  {
+    "question": "Kill a process by name",
+    "answer": "pkill process_name"
+  },
+  {
+    "question": "Display disk usage of all mounted filesystems",
+    "answer": "df -h"
+  },
+  {
+    "question": "Check memory usage",
+    "answer": "free -h"
+  },
+  {
+    "question": "Create a new user",
+    "answer": "sudo adduser username"
+  },
+  {
+    "question": "Delete a user",
+    "answer": "sudo deluser username"
+  },
+  {
+    "question": "Add a user to a group",
+    "answer": "sudo usermod -aG groupname username"
+  },
+  {
+    "question": "Change user password",
+    "answer": "passwd username"
+  },
+  {
+    "question": "Show groups of a user",
+    "answer": "groups username"
   }
 ]
