@@ -532,5 +532,32 @@
   {
     "question": "Show groups of a user",
     "answer": "groups username"
+  },
+   {
+    "question": "show Ubuntu OS Details",
+    "answer": "lscpu"
+  },
+  {
+    "question": "show Ubuntu OS Memeory Details",
+    "answer": "free -h"
+  },
+  {
+    "question": "ajax code",
+    "answer": ` $.ajax({
+
+        'url' : 'http://voicebunny.comeze.com/index.php',
+        'type' : 'GET',
+        'data' : {
+            'numberOfWords' : 10
+        },
+        'success' : function(data) {              
+            alert('Data: '+data);
+        },
+        'error' : function(request,error)
+        {
+            alert("Request: "+JSON.stringify(request));
+        }
+    });
+`
   }
 ]
