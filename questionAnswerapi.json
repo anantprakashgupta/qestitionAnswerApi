@@ -541,23 +541,9 @@
     "question": "show Ubuntu OS Memeory Details",
     "answer": "free -h"
   },
- {
+{
   "question": "ajax code",
-  "answer": `
-    $.ajax({
-        'url' : 'http://voicebunny.comeze.com/index.php',
-        'type' : 'GET',
-        'data' : {
-            'numberOfWords' : 10
-        },
-        'success' : function(data) {              
-            alert('Data: '+data);
-        },
-        'error' : function(request,error)
-        {
-            alert("Request: "+JSON.stringify(request));
-        }
-    });
-    `
- }
+  "answer": "\n    $.ajax({\n\n        'url' : 'http://voicebunny.comeze.com/index.php',\n        'type' : 'GET',\n        'data' : {\n            'numberOfWords' : 10\n        },\n        'success' : function(data) {              \n            alert('Data: '+data);\n        },\n        'error' : function(request,error)\n        {\n            alert(\"Request: \"+JSON.stringify(request));\n        }\n    });\n"
+}
+
 ]
