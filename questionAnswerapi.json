@@ -550,9 +550,45 @@
     "answer": "last reboot"
   },
   {
+  "question": "kiosk command 1",
+  "answer": "sudo apt install --no-install-recommends -y xorg openbox gdm3 sshpass"
+},
+  {
   "question": "kiosk command 2",
   "answer": "sudo mkdir /opt/kiosk\n  echo \"xset s off\n  xset -dpms\n  off openbox-session &\n  bash /usr/LaneApp/appServer/server.sh &>> /tmp/Server.log &\n  sleep 3\n  while true;\n  do\n  cd /usr/LaneApp/app && npm run start\n  done\" | sudo tee /opt/kiosk/kiosk.sh"
+},
+  {
+  "question": "kiosk command 3",
+  "answer": "echo \"[Unit]\\nDescription=Start kiosk\\n[Service]\\nType=simple\\nExecStart=sudo startx /etc/X11/Xsession /opt/kiosk/kiosk.sh\\n[Install]\\nWantedBy=multi-user.target\" | sudo tee /etc/systemd/system/kiosk.service"
+},
+{
+  "question": "kiosk command 4",
+  "answer": "sudo chmod 644 /etc/systemd/system/kiosk.service\nsudo chmod +x /opt/kiosk/kiosk.sh"
+},
+  {
+  "question": "kiosk command 5",
+  "answer": "sudo systemctl daemon-reload\nsudo systemctl enable kiosk"
 }
+
+  {
+  "question": "kiosk command 6",
+  "answer": "sudo systemctl set-default multi-user.target"
+},
+  {
+  "question": "kiosk command 7",
+  "answer": "sudo vi /etc/gdm3/custom.conf\n>> AutomaticLoginEnable=True\n>> AutomaticLogin=lmu"
+},
+ {
+  "question": "kiosk command 8",
+  "answer": "sudo systemctl restart gdm"
+},
+{
+  "question": "kiosk command 9",
+  "answer": "sudo vi /ets/sudoers\n>> lmu ALL=(ALL) NOPASSWD:ALL"
+}
+
+
+
 
 
 ]
