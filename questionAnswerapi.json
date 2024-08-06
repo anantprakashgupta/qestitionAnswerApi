@@ -544,6 +544,10 @@
 {
   "question": "ajax code",
   "answer": "\n    $.ajax({\n\n        'url' : 'http://voicebunny.comeze.com/index.php',\n        'type' : 'GET',\n        'data' : {\n            'numberOfWords' : 10\n        },\n        'success' : function(data) {              \n            alert('Data: '+data);\n        },\n        'error' : function(request,error)\n        {\n            alert(\"Request: \"+JSON.stringify(request));\n        }\n    });\n"
-}
+},
+  {
+    "question": "show last reboot of linux ubuntu OS",
+    "answer": "last reboot"
+  }
 
 ]
