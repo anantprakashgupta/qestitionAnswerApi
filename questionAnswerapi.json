@@ -550,10 +550,6 @@
     "answer": "last reboot"
   },
   {
-    "question": "kiosk command 2",
-    "answer": "\n  sudo mkdir /opt/kiosk\n  echo "xset s off\n  xset -dpms\n  off openbox-session &\n  bash /usr/LaneApp/appServer/server.sh &>> /tmp/Server.log &\n  sleep 3\n  while true;\n  do\n  cd /usr/LaneApp/app && npm run start\n  done" | sudo tee /opt/kiosk/kiosk.sh \n  "
-  },
-  {
   "question": "kiosk command 2",
   "answer": "sudo mkdir /opt/kiosk\n  echo \"xset s off\n  xset -dpms\n  off openbox-session &\n  bash /usr/LaneApp/appServer/server.sh &>> /tmp/Server.log &\n  sleep 3\n  while true;\n  do\n  cd /usr/LaneApp/app && npm run start\n  done\" | sudo tee /opt/kiosk/kiosk.sh"
 }
