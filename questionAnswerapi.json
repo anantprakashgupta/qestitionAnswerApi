@@ -568,7 +568,7 @@
   {
   "question": "kiosk command 5",
   "answer": "sudo systemctl daemon-reload\nsudo systemctl enable kiosk"
-}
+},
 
   {
   "question": "kiosk command 6",
@@ -585,6 +585,10 @@
 {
   "question": "kiosk command 9",
   "answer": "sudo vi /ets/sudoers\n>> lmu ALL=(ALL) NOPASSWD:ALL"
+},
+  {
+  "question": "Remove Mysql Complete",
+  "answer": "\n sudo apt-get remove --purge mysql* \n sudo apt-get autoremove \n sudo apt-get autoclean \n"
 }
 
 
